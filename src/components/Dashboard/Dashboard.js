@@ -1,9 +1,9 @@
 import React from 'react'
 
-const dashboard = () => {
+const dashboard = (props) => {
   return (
     <div>
-      
+    
     </div>
   )
 }
