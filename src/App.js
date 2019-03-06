@@ -9,6 +9,15 @@ const players = [
 ]
 
 const app = () => {
+    const [playersList, setPlayersList] = useState([...players])
+    const [playerAtBat, setPlayerAtBat] = useState(null)
+
+    const detectChangesFromDashboard = (field, action) => {
+      const updatedplayersList = [...playersList];
+      updatedplayersList[playerAtBat][field] = action.payload
+      setPlayersList(updatedplayersList)
+    }
+
     return (
       <div className="App">
       </div>
